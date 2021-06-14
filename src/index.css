@@ -1,0 +1,61 @@
+#root {
+  display: flex;
+  flex-direction: row;
+}
+
+.monitor {
+  background-image: url("./bg.png");
+  width: 832px;
+  height: 877px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#textarea {
+  margin: 94px 107px 0px;
+  border-radius: 10px;
+  width: 613px;
+  height: 541px;
+  resize: none;
+  background-color: black;
+  background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+  color: white;
+  font: 1.3rem Inconsolata, monospace;
+  text-shadow: 0 0 5px #C8C8C8;
+}
+
+#textarea::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) 1px, transparent 1px, transparent 2px);
+}
+
+::selection {
+  background: #0080FF;
+  text-shadow: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #12f57f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*# sourceMappingURL=index.css.map */
