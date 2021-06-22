@@ -1,4 +1,4 @@
-$base-color: #073605;
+$base-color: #000000fd;
 $text-color: 	#199515; 
 $selection-color: #146c11;
 $scroll-handle: #0e4e0b;
@@ -15,20 +15,25 @@ body {
     background-image: url('./bg.png');
     width: 832px;
     height: 877px;  
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);  
+    // box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
 }
+
 .textOnScreen {
     
     border-radius: 10px;
     
     resize: none;
-    background-color: black;
+    background-color: $base-color;
     background-image: radial-gradient(
-    $base-color, black 100%
+    $scroll-handle, black 80%
     );
     color: $text-color;
     font: 1.3rem Inconsolata, monospace;
-    text-shadow: 0 0 5px #C8C8C8;
+    text-shadow: 0 0 3px $text-color;
+
+    
+    
 }  
 #textarea {
     margin: 94px 107px 0px; 
@@ -37,22 +42,7 @@ body {
     outline: none;
     padding: 5px 10px;
 } 
-.textOnScreen::after {
-  
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: repeating-linear-gradient(
-      0deg,
-      rgba($base-color, 0.15),
-      rgba($base-color, 0.15) 1px,
-      transparent 1px,
-      transparent 2px
-    );
-}
+
 #innerHtml {
     margin: 95px 107px 0px; 
     overflow-x:hidden;
@@ -60,6 +50,11 @@ body {
     padding: 5px 10px;
     width: 599px;
     height: 534px;
+    img {
+      width: 500px;
+      height: auto;
+    }
+
 }
 ::selection {
     background: $selection-color;
