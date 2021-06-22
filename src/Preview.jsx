@@ -8,7 +8,8 @@ const Preview = props => {
     return (
         <div id="preview" className="monitor">
             <div 
-                id="innerHtml" 
+                id="innerHtml"
+                className="textOnScreen" 
                 dangerouslySetInnerHTML={{
                     __html: marked(props.markdown)
                 }}

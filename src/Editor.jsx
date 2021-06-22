@@ -4,6 +4,7 @@ const Editor = props => {
             <textarea 
                 value={props.markdown} 
                 id="textarea"
+                className="textOnScreen"
                 type="text"
                 onChange={props.onChange}
             />
