@@ -1,1 +1,1 @@
-![gif](https://github.com/Pashtetium/demos/markdown_previewer.gif)
+![gif](https://github.com/Pashtetium/demos/blob/main/markdown_previewer.gif?raw=true)
